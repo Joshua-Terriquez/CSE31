@@ -1,2 +1,3 @@
 # CSE31
-Labs
+Labs & Projects
+
