@@ -1,0 +1,11 @@
+ASSIGNMENT 1:
+    1) Line 18 caused the segmentation fault.
+    2) In order to fix it partially you would input "&"
+
+    3) sum values aren't being transferred.
+    4) since theres objects you have to make sum a pointer to keep track of the value.
+
+Assignment 2:
+    1)Yes it appended
+    2)No, it appended with values of previous memory (thats the bug)
+    3)No, memory is either being reused and need to be recycled somehow.

@@ -1,0 +1,19 @@
+define variable submission = 1
+define variable positivetotal
+define variable positiveamount
+define variable negativetotal
+define variable negativeamount
+define variable avg_pos
+define variable avg_neg
+
+while (sumission != 0){
+ask for submission
+if submission is positive, add it to positive total, and increase positiveamount by 1
+if submission is negaitve add it to negative total, and increase negativeamount by 1
+
+submit 0 is submitted to end loop
+
+avg_pos = positivetotal/positiveamount
+avg_neg = positivenegative/negativeamount
+
+display both

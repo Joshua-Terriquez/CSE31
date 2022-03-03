@@ -1,0 +1,75 @@
+TPS Partner names:
+    Justin Ventos, Darren Roberson, Sawyer Shaddix
+Online tutorials shared:
+-https://web.eecs.umich.edu/~sugih/pointers/gdbQS.html#:~:text=If%20the%20line%20to%20be,over%22%20command%20of%20most%20debuggers.
+-https://stackoverflow.com/questions/4720807/how-to-skip-some-lines-in-the-gdb-debugger
+-https://www.scss.tcd.ie/Martin.Emms/NLP/C++_notes/node12.html
+
+
+TPS Activity 2:
+1. How do you compile your punishment.c so that you can debug it using GDB? Try it with your code
+and set the name of the executable to punish.
+    The way we would compile the file in order to debug using GDB:
+        "gcc -g punishment.c -o punishment"  
+       
+2. Once punishment.c is compiled, how do you load it in GDB? Try it with your program.
+          "gdb punishment" //to access gdb
+3. Once punish is loaded, how do you run it in GDB? Try to run your punish.
+           Once the second step is done you will see (gdb)
+           simply type "run" following it
+4. What are breakpoints? How do you set a breakpoint at a certain line of your program? Try to set a
+breakpoint in punishment.c where the for loop begins.
+    simply type "break" followed with a space and whichever line you want set a
+    a break point.. in my case i would type "break 22".
+5. Now run the program again. It should stop at the breakpoint you set in Q4. From here, how do you run
+the program line by line? Try to run the next 3 lines with your program.
+      To execute one line of code, type "step" or "s". If the line to be executed is a function
+       call, gdb will step into that function and start executing its code one line at a time.
+       If you want to execute the entire function with one keypress, type "next" or "n". 
+       This is equivalent to the "step over" command of most debuggers.
+6. While you are still running punish line by line, how can you see the value of a variable? Pick 3 variables
+in your program and display them in the terminal one by one.
+        to see the value of a variable you would type the letter "p" folllowing variable name.
+        For example, "p i" shows the value of i.
+7. Now that you are tired of running line by line, how do you let the program finish its run? Try to finish
+running your punish.
+      You let the program finish by typing "continue" while you are in gdb
+8. How do you exit from GDB?
+ "quit"
+
+
+TPS activity 3:
+1. How many variables were declared in the first line of main()? How many of them are pointers (and
+what are they)?
+            4 variables and 2 of them are pointers "*px" "*py".
+2. What will be the values of x, y, and arr[0] if you run the program? Validate your answer by running
+the program. Why do you think it happens that way? You will need to insert printf statements to
+display those values.
+             One would think the variable would've had a value of 0. After running
+             the program the variables x and y have different values and so does the arr.
+             This probably happen because there is no assign value and so the system 
+             gives it a "space" that doesnt  need perhaps.
+3. How do you prevent x, y, and the content of arr from having unexpected values? Try to fix them in
+the program.
+                    set x and y equal to 0 directly; as for the arrary 
+                    arr[10]={0};
+
+4. The moment you have declared a variable, the program will allocate a memory location for it. Each
+memory location has an address. Now insert printf statements to display the addresses of x and y.
+-printf("%p\n",&y); //displays address of y
+-printf("%p\n",&x); //displays address of x
+
+5. Now insert code so that px points to x and py points to y. Print out the values and addresses of those
+pointers using only the pointer variables (yes, pointers have addresses too!). You should see that the value of
+px is equal to the address of x, and the same is true for py and y.
+
+6. As we have learned in lectures, an array name can be used as a pointer to access the content of the array.
+Write a loop to output the contents of arr by using arr as a pointer (do not use [] in your loop).
+
+7. Are array names really the same as pointers? Let us find out! An array name points to the first element
+of an array, so arr should point to the address of arr[0]. Insert code to verify this.
+
+8. Now print out the address of arr. Does the result make sense? Why?
+   The results clearly show where the array address is pointed to the first element.
+It makes sense due to it has to point to the first value and then go from there to all of them.
+

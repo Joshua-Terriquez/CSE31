@@ -1,0 +1,45 @@
+TPS (Think per share) 
+TPS Activity 1:
+    TPS partners' names:
+                    unknown.
+                    unknown.
+                    unknown.
+                    unknown.
+TPS  Activity 2:
+    1. How can you open a terminal from your Linux computer?
+        Once having everything installed of terminal preference
+        one can search ubunutu(or ones' preferred/ downloaded terminal) 
+        on their windows search bar and open the terminal by clicking on it.
+
+a. Can you open more than 1 terminal at the same time?
+        It is possible to have more than one terminal open.
+b. Why do you think you want to open more than 1 terminal at the same time?
+        Possibly to handle different programs whether theyre doing different
+        task or working towards the same goal.
+2. In the terminal, how can you tell what are contents inside the current directory (i.e., what is the
+command)?
+        The command to tell what contents are inside the current directory
+        would be "ls"
+3. From your current directory, how can you navigate to Desktop directory?
+        The way i'm currently coding is opening ubuntu terminal
+        and by typing code I open window studio. In windows studio
+        i make a directory and c files for the class/lab needs.
+4. While you are in Desktop, create a new directory called CSE31. How do you do this?
+        Either open visual studio by typing "code" in ubuntu terminal or
+        from the terminal you can do "mkdir CSE31"
+TPS Activity 3:
+   1)
+        1) https://salmenzouari.medium.com/how-to-compile-and-run-c-program-in-linux-using-gcc-b58ab78a5f53
+        2)https://raspberrypi.stackexchange.com/questions/9681/trying-to-execute-a-out-returns-bash-a-out-command-not-found
+    3) "gcc main.c"
+    4) no errors are given and a.out file appears which makes me run it
+        by typing ./a.out
+5)What does the –c flag do in gcc?
+  -  "gcc -c filename" compiles source files without linking.
+  - This compilation generatES main.o object file.
+6) What does the –g flag do in gcc?
+    gcc -g generates debug information to be used by GDB debugger.
+7. How do you change the executable name from main to cselab1?
+changing it directly.
+8. What happens when you compile your code by typing gcc main.c only?
+compiles without linking
