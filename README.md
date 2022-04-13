@@ -1,3 +1,3 @@
 # CSE31
-Labs & Projects
+Labs & Projects (Archival Purposes)
 
